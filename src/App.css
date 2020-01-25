@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap');
+body, html {
+  margin: 0;
+  padding: 0;
+}
+.name {
+
+}
+.App-white {
+  background:#E3DFE0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat";
+  transition: 0.15s all ease-in-out;
+
+}
+.App-black {
+  background:#474747;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat";
+  transition: 0.15s all ease-in-out;
+
+}
+.name {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  font-size: 32px;
+}
+.name-black {
+  color: white;
+}
+.InputBox {
+  margin-top: 50px;
+  background: #7276A6;
+  /* background: #273648; */
+  width: 300px;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 10px;; */
+}
+.InputBox-black {
+  background-color: #606380;
+  /* background: #273648; */
+  
+}
+.InputBox input {
+  margin: 20px;
+  padding: 10px;
+  width: 250px;
+  font-size: 20px;
+}
+.button {
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  background-color: #DF4746;
+  transition: 0.1s all ease-in;
+}
+.button:hover {
+  /* color: black; */
+  background-color: #961f1e;
+  transition: 0.1s all ease-in;
+}
+.ModificationsBlock {
+  position: absolute;
+  right: 0;
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.button-theme {
+  color: black;
+  padding: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.1s all ease-in-out;
+}
+.button-theme:hover {
+  color: #ff8f05;
+  transition: 0.1s all ease-in-out;
+  
+}
+.button-theme-black {
+  color: white;
+}
+.language {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  color: black;
+  transition: 0.1s all ease-in-out;
+
+}
+.language-black {
+  color: white;
+}
+.language:hover {
+  color: #ff8f05;
+  transition: 0.1s all ease-in-out;
+}
+.weather-block {
+  /* border: 1px solid black; */
+  width: 260px;
+  margin-top: 50px;
+  background-color: #7276A6;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  /* font-family: 'Raleway'; */
+}
+.weather-block-black {
+  background-color: #606380;
+}
+.weather-b {
+  padding: 10px;
+  
+}
+@media(max-width: 800px) {
+  .ModificationsBlock {
+    flex-direction: row;
+    align-items: baseline;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    /* position: relative; */
+  }
+  .name {
+    margin-top: 120px;
+  }
+}
+.showLanguage-block {
+  display: flex;
+  margin-bottom: 20px;
+}
+.showLanguage-block div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
