@@ -18,7 +18,7 @@ const ModificationsComponents = (props) => {
             <div onClick={() => {props.setCookie("weather_app_theme", 1 - props.theme, {path: '/', maxAge: 60 * 60 * 24 * 30}); props.setTheme(1 - props.theme);}}
             className={props.theme ? "button-theme button-theme-black" : "button-theme"}>
             {props.showLanguage == 0 ? "Change Theme" : props.showLanguage == 1 ? "Сменить тему" : 
-                "vaheta teemat"}
+                "Vaheta teemat"}
             </div>
             {/* <div className={props.theme ? "button-theme button-theme-black" : "button-theme"}
             onMouseMove={() => setShowLanguage(true)} onMouseLeave={() => setShowLanguage(false)}>

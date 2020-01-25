@@ -20,6 +20,7 @@ function App() {
   const [weatherData, setWeatherData] = useState(null);
   const [city, setCity] = useState('')
   const [country, setCountry] = useState('')
+  const [outputCity, setOutputCity] = useState('')
   if (!checkCookies) {
     if ((cookies.weather_app_theme != null) & (theme != cookies.weather_app_theme)) {
       setTheme(cookies.weather_app_theme)
@@ -39,6 +40,7 @@ function App() {
         const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${Math.floor(position.coords.latitude)}&lon=${Math.floor(position.coords.longitude)}&appid=${API_KEY}&units=metric`)
         const data = await api_call.json()
         console.log(data)
+        setOutputCity('')
         setWeatherData(data)
       }
       fetchData();
@@ -54,9 +56,9 @@ function App() {
       console.log('NOT FOUND')
       setWeatherData('NOT_FOUND')
     } else {
-      
-      setWeatherData(data)
-    }
+      setOutputCity(city)
+
+      setWeatherData(data)    }
     console.log('weather ', data);
   }
   //setCookie("weather-app_theme", 1, {path: '/'})
@@ -90,6 +92,7 @@ function App() {
         theme = {theme}
         showLanguage = {language}
         weatherData = {weatherData}
+        outputCity = {outputCity}
       />
       <ModificationsComponents
         setTheme = {setTheme}
